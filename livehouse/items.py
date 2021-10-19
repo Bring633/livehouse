@@ -13,14 +13,15 @@ class LivehouseItem(scrapy.Item):
     # name = scrapy.Field()
     
     category = scrapy.Field()#所属类别
-    start_date = scrapy.Field()
-    end_date = scrapy.Field()
-    loc = scrapy.Field()#所在城市
-    name = scrapy.Field()#场次的名字
+    show_date = scrapy.Field()#演出的日期时间
+    city = scrapy.Field()#所在城市
+    loc = scrapy.Field()#所在场地
+    show_name = scrapy.Field()#场次的名字
     shower = scrapy.Field()#乐队
     state = scrapy.Field()#售票状态
     provider = scrapy.Field()#哪里售卖
     web = scrapy.Field()#网址
     sale_price = scrapy.Field()#价格
+    target_shower = scrapy.Field()
     
     pass
